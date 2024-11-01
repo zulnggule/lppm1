@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script>
+      function handleSubmit(event) {
+        event.preventDefault(); // Mencegah pengiriman formulir
+
+        // Mengambil nilai input
+        const username = document.getElementById("username").value;
+        const password = document.getElementById("password").value;
+        const output = document.getElementById("output");
+        output.style.display = "none"; // Sembunyikan output sebelumnya
+
+        // Validasi sederhana
+        if (username === "" || password === "") {
+          output.innerHTML =
+            "<p style='color: red;'>Username dan password tidak boleh kosong!</p>";
+          output.style.display = "block";
+          return;
+        }
+
+        // Simulasi proses login
+        if (username === "admin" && password === "password123") {
+          // Redirect ke beranda setelah login berhasil
+          window.location.href = "LPPM-1.html"; // Ganti dengan URL beranda yang sesuai
+        } else {
+          output.innerHTML =
+            "<p style='color: red;'>Username atau password salah. Silakan coba lagi.</p>";
+          output.style.display = "block"; // Tampilkan output
+        }
+      }
+    </script>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <ul>
+          <li><a href="LPPM-1.html">Beranda</a></li>
+          <li><a href="login.html">Login</a></li>
+          <li><a href="about.html">Tentang Kami</a></li>
+          <li><a href="contact.html">Kontak</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <h1>Login ke Akun Anda</h1>
+      <form onsubmit="handleSubmit(event)">
+        <label for="username">Username:</label>
+        <input type="text" id="username" name="username" required />
+
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required />
+
+        <button type="submit">Login</button>
+      </form>
+
+      <div id="output" style="display: none; margin-top: 20px"></div>
+    </main>
+    <footer>
+      <p>&copy; 2024 Nama Perusahaan. Semua hak dilindungi.</p>
+    </footer>
+  </body>
+</html>

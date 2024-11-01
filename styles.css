@@ -1,0 +1,90 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: #4caf50;
+  color: white;
+  padding: 10px 0;
+}
+
+nav ul {
+  list-style-type: none;
+  text-align: center;
+}
+
+nav ul li {
+  display: inline;
+  margin: 0 15px;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+}
+
+main {
+  padding: 20px;
+}
+
+footer {
+  text-align: center;
+  padding: 10px 0;
+  background-color: #4caf50;
+  color: white;
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+}
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: #4caf50;
+  color: white;
+  padding: 10px 0;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 20px;
+}
+
+nav ul {
+  list-style-type: none;
+  display: flex;
+  padding: 0;
+}
+
+nav ul li {
+  margin: 0 15px;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+}
+
+.main-image {
+  max-width: 100%; /* Responsif, atur lebar maksimum sesuai layar */
+  height: auto; /* Menjaga rasio aspek gambar */
+  display: block; /* Agar gambar tampil sebagai blok */
+  margin: 20px auto; /* Pusatkan gambar */
+}
+
+footer {
+  text-align: center;
+  padding: 10px 0;
+  background-color: #4caf50;
+  color: white;
+  position: relative;
+  width: 100%;
+  bottom: 0;
+}
